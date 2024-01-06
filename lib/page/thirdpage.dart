@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:lab08_144/page/firstpage.dart';
 
 class ThirdPageState extends StatefulWidget {
-  const ThirdPageState({super.key});
+  const ThirdPageState({super.key, required this.data});
+  final String data;
 
   @override
   State<ThirdPageState> createState() => _ThirdPageStateState();
@@ -29,7 +30,8 @@ class _ThirdPageStateState extends State<ThirdPageState> {
                     ));
               },
               child: const Text("ไปยังหน้าที่ 1"),
-            )
+            ),
+            Text(widget.data)
           ],
         ),
       ),

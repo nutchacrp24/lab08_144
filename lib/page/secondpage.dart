@@ -38,7 +38,8 @@ class _SecondPageState extends State<SecondPage> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => ThirdPageState(),
+                      builder: (context) =>
+                          ThirdPageState(data: _controller.text),
                     ));
               },
               child: const Text("ไปยังหน้าที่ 3"),
